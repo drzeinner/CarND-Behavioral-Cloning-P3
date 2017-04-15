@@ -1,7 +1,3 @@
----
-
-# Behavioral Cloning
-
 [image1]: ./images/track1_normal_center.jpg "Track 1 Center Normal"
 [image2]: ./images/track1_reverse_center.jpg "Track 1 Center Reverse"
 [image3]: ./images/track1_recover_left1.jpg "Track 1 Recover Left 1"
@@ -12,6 +8,9 @@
 [image5]: ./images/track1_recover_right3.jpg "Track 1 Recover Right 3"
 
 ---
+**Behavioral Cloning**
+---
+
 ### Files Submitted
 
 My project includes the following files:
@@ -59,19 +58,27 @@ My model mimics the NVIDIA self driving car convolutional neural network as desc
 
 The first time around I collected data by recording a few forward laps and a few reverse laps. The car performed ok but had trouble staying on the road at sharp turns. To combat this I recorded a few laps of the car driving from the side of the road back to the center. Now the car could handle the sharp turns but tended to drive off the road at section where the lines markings were missing. So I just recorded driving past that section of the road. Now the car could handle that specific situation but now it had trouble crossing the bridge. I realized that I was making the car memorize the road and therefore overfitting the specific sections of the road. The network was not becoming more robust to handle any situation. I wanted to remove my last set of training data, however, all of the data was lumped into a single directory. So, I reorganized my training data into separate directories for each type of training. I ended up with the following training directories:
 #### track1_normal
+
 ![alt text][image1]
 
 #### track1_reverse
+
 ![alt text][image2]
 
 #### track1_realign_left
+
 ![alt text][image3]
+
 ![alt text][image4]
+
 ![alt text][image5]
 
 #### track1_realign_right
+
 ![alt text][image6]
+
 ![alt text][image7]
+
 ![alt text][image8]
 
 Now that I had my data split I could retrain my model using different combinations of training data. If any training strategy seemed to make the car perform worse I could easily remove that data from the process. 
@@ -111,4 +118,5 @@ I ran my model on track 2 using only the training from the first track and I was
 5. Add regularization layers. For training only on the first simple track regularization wasn't needed to get a successful run. However, when I train the the second track and other potential tracks, regularization would be needed in order to generalize.
  
 # References
+
 [^1]: arXiv:1604.07316v1 [https://arxiv.org/abs/1604.07316]
