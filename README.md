@@ -16,10 +16,12 @@
 ### Files Submitted
 
 My project includes the following files:
+* README.md summarizing the results
 * model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
-* README.md summarizing the results
+* successRun.mp4 video showing a successful lap around the track
+
 
 A model can be trained by running the model.py file and providing it with training data and an output file
 ```sh
