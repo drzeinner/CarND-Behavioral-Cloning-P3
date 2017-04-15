@@ -71,11 +71,9 @@ def augmentData(images, measurements):
 
 # -----------------------------------------------------
 # Apply some preprocessing to the image
-# Grayscale
 #
 def preprocessImage(img):
     return img
-    # return cv2.cvtColor(img, cv2.COLOR_RGB2GRAY).reshape(160, 320, 1)
 
 # Apply prepocessing to a list of images
 #
@@ -177,15 +175,6 @@ def visualizeTraining(history_object):
 def trainNetwork(train_data_dir, model_path):
     train_samples, validation_samples, train_generator, validation_generator = loadData(train_data_dir)
     print("num train_samples={} num validation_samples={}".format(len(train_samples), len(validation_samples)))
-
-    # Convolutional 24 5x5 stride 2
-    # Convolutional 36 5x5 stride 2
-    # Convolutional 48 3x3 stride 1
-    # Convolutional 64 3x3 stride 1
-    # flatten
-    # Dense 120
-    # Dense 84
-    # Dense 1
 
     model = Sequential()
 
