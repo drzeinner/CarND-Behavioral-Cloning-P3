@@ -3,12 +3,14 @@
 [image3]: ./images/track1_recover_left1.jpg "Track 1 Recover Left 1"
 [image4]: ./images/track1_recover_left2.jpg "Track 1 Recover Left 2"
 [image5]: ./images/track1_recover_left3.jpg "Track 1 Recover Left 3"
-[image3]: ./images/track1_recover_right1.jpg "Track 1 Recover Right 1"
-[image4]: ./images/track1_recover_right2.jpg "Track 1 Recover Right 2"
-[image5]: ./images/track1_recover_right3.jpg "Track 1 Recover Right 3"
+[image6]: ./images/track1_recover_right1.jpg "Track 1 Recover Right 1"
+[image7]: ./images/track1_recover_right2.jpg "Track 1 Recover Right 2"
+[image8]: ./images/track1_recover_right3.jpg "Track 1 Recover Right 3"
 
 ---
+
 **Behavioral Cloning**
+
 ---
 
 ### Files Submitted
