@@ -2,8 +2,6 @@
 
 # Behavioral Cloning
 
-[//]: # (Image References)
-
 [image1]: ./images/track1_normal_center.jpg "Track 1 Center Normal"
 [image2]: ./images/track1_reverse_center.jpg "Track 1 Center Reverse"
 [image3]: ./images/track1_recover_left1.jpg "Track 1 Recover Left 1"
@@ -45,17 +43,17 @@ My model mimics the NVIDIA self driving car convolutional neural network as desc
 4. The feature extraction outputs are then flattened and passed through 4 fully connected layers of output sizes 100, 50, 10, 1. These layers serve to convert the extracted features into a corresponding steering angle.
 
 ### Final Model Architecture
-Crop 	- Top, Bottom
-Lambda 	- x / 255 - 0.5 (output (-0.5, 0.5))
-Conv2D 	- kernel (5x5), stride (2x2), filters (24)
-Conv2D 	- kernel (5x5), stride (2x2), filters (36)
-Conv2D 	- kernel (3x3), stride (1x1), filters (48)
-Conv2D 	- kernel (3x3), stride (1x1), filters (64)
-Flatten
-Dense	- output (100)
-Dense	- output (50)
-Dense	- output (10)
-Dense	- output (1)
+- Crop 	- Top, Bottom
+- Lambda 	- x / 255 - 0.5 (output (-0.5, 0.5))
+- Conv2D 	- kernel (5x5), stride (2x2), filters (24)
+- Conv2D 	- kernel (5x5), stride (2x2), filters (36)
+- Conv2D 	- kernel (3x3), stride (1x1), filters (48)
+- Conv2D 	- kernel (3x3), stride (1x1), filters (64)
+- Flatten
+- Dense	- output (100)
+- Dense	- output (50)
+- Dense	- output (10)
+- Dense	- output (1)
 
 ### Data Collection
 
